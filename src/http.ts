@@ -1,6 +1,6 @@
 import {Context} from './context'
 
-export type HttpMethod = "OPTIONS" | "GET" | "HEAD" | "POST" | "PUT" | "DELETE" | "TRACE" | "CONNECT" | "PATCH"
+export declare type HttpMethod = "OPTIONS" | "GET" | "HEAD" | "POST" | "PUT" | "DELETE" | "TRACE" | "CONNECT" | "PATCH"
 
 export interface FunctionRequest {
     originalUrl: string;
@@ -13,10 +13,10 @@ export interface FunctionRequest {
 
 export interface FunctionResponse {
     body?: any;
-    status?: number;
+    status?: HttpStatusCodes | number;
     headers?: {
         "content-type"?: string;
-        "content-length"?: HttpStatusCodes | number;
+        "content-length"?: number;
         "content-disposition"?: string;
         "content-encoding"?: string;
         "content-language"?: string;
@@ -29,7 +29,7 @@ export interface FunctionResponse {
     }
 }
 
-export enum HttpStatusCodes {
+export declare const enum HttpStatusCodes {
     // 1XX Informational
     Continue = 100,
     SwitchingProtocols = 101,

@@ -1,11 +1,11 @@
-interface Context {
+import { FunctionResponse } from './http'
+
+export interface Context {
     invocationId: string;
     bindingData: any;
     bindings: any;
 
-    log(text: any): void;
+    log(...text: any[]): void;
 
-    done(err?: any, output?: { [s: string]: any }): void;
+    done(err?: any, output?: { [s: string]: any }, res?: FunctionResponse): void;
 }
-
-export {Context}
