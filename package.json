@@ -11,6 +11,7 @@
   "scripts": {
     "clean": "rimraf ./dist",
     "prebuild": "npm run clean",
+    "prepare": "tsc",
     "build": "tsc",
     "watch": "tsc -w"
   },
