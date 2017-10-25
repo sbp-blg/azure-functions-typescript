@@ -2,7 +2,7 @@ import {Context} from './context'
 
 export type HttpMethod = "OPTIONS" | "GET" | "HEAD" | "POST" | "PUT" | "DELETE" | "TRACE" | "CONNECT" | "PATCH"
 
-export interface IFunctionRequest {
+export interface FunctionRequest {
     originalUrl: string;
     method: HttpMethod;
     query: { [s: string]: string; };
@@ -11,7 +11,7 @@ export interface IFunctionRequest {
     rawbody: any;
 }
 
-export interface IFunctionResponse {
+export interface FunctionResponse {
     body?: any;
     status?: number;
     headers?: {
@@ -127,6 +127,6 @@ export enum HttpStatusCodes {
 }
 
 export interface HttpContext extends Context {
-    res: IFunctionResponse
+    res: FunctionResponse
 }
 
