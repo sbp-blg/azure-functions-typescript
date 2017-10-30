@@ -38,10 +38,10 @@ You're also welcom to send a PR after following the instructions below. If it's 
 
 ### Settings up development environment
 
-1. Use node version 5.9.1
+1. Use node version 8.0.13 or higher
 2. Clone repo:
 
-    `git clone https://github.com/christopheranderson/azure-functions-typescript.git` 
+    `git clone https://github.com/lsimons/azure-functions-typescript.git` 
     `cd azure-functions-typescript`
 
 3. Install dependences - `npm install`
