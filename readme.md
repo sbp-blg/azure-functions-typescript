@@ -4,7 +4,7 @@
 
 These are some helper libraries for folks trying to use TypeScript with Azure Functions
 
-`npm install --save christopheranderson/azure-functions-typescript`
+`npm install --save @lsimons/azure-functions-typescript`
 
 ```typescript
 import {HttpContext, IFunctionRequest, HttpStatusCodes} from 'azure-functions-typescript'
