@@ -1,21 +1,19 @@
 {
-  "name": "@lsimons/azure-functions-typescript",
-  "version": "0.1.1",
+  "name": "azure-functions-typescript",
+  "version": "0.1.2",
   "description": "Helper library for using TypeScript with Azure Functions",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "src/index.js",
+  "typings": "src/index.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lsimons/azure-functions-typescript.git"
+    "url": "https://github.com/sbp-blg/azure-functions-typescript.git"
   },
-  "scripts": {
-    "clean": "rimraf ./dist",
-    "prebuild": "npm run clean",
-    "prepare": "tsc",
-    "build": "tsc",
-    "watch": "tsc -w"
-  },
-  "author": "lsimons & christopheranderson & Steve Lee",
+  "author": "Steve Lee",
+  "contributors": [
+    "victor-perez",
+    "lsimons",
+    "christopheranderson"
+  ],
   "license": "MIT",
   "devDependencies": {
     "rimraf": "^2.6.1",
